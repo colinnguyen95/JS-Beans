@@ -87,6 +87,16 @@ a{
   font-weight: 300;
 }
 
+.icons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.icon{
+  margin: 0 50px;
+}
+
 .wrapper {
   /* box-sizing: border-box; */
   width: 90vw;
