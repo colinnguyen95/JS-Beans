@@ -1,0 +1,18 @@
+.lectures{
+    /* box-sizing: border-box; */
+  width: 90vw;
+  max-width: 1170px;
+  /* margin-top: 80px; */
+  /* margin: 50px 40px 100px; */
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  /* justify-items: center; */
+  color: #444;
+  z-index: -99;
+  /* background-color: pink; */
+}

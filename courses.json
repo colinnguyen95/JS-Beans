@@ -1,0 +1,52 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "HTML",
+          "description": "Your very first step into creating web pages",
+          "image": { "fields": { "file": { "url": "./images/html.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "CSS",
+          "description": "Learn how to style web pages",
+          "image": { "fields": { "file": { "url": "./images/css.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Web Design Principles",
+          "description": "Dive into cool animations",
+          "image": { "fields": { "file": { "url": "./images/wdp.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "JavaScript",
+          "description": "Here's where the fun begins",
+          "image": { "fields": { "file": { "url": "./images/js.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Web Development",
+          "description": "JavaScript will make you powerful",
+          "image": { "fields": { "file": { "url": "./images/webdev.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Create your own website",
+          "description": "Put everything you learned to the test",
+          "image": { "fields": { "file": { "url": "./images/inter-js.png" } } }
+        }
+      }
+    ]
+  }

@@ -21,10 +21,14 @@ body {
   background: #212C4F;
 }
 
+a{
+  text-decoration: none;
+}
+
 /********** Navigation Bar ************/
 
 .nav-container{
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,10 +44,11 @@ body {
 /********** Hero ************/
 
 .hero-wrapper{
-  display: flex;
+  margin: 0;
+  text-align: center;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
-
+  flex-direction: column; */
   height: 920px;
   background: linear-gradient(
     rgba(0, 0, 0, 0.1),
@@ -71,9 +76,10 @@ body {
 }
 
 .hero-header{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center; */
+  margin: 0 auto;
   max-width: 600px;
   text-align: center;
   line-height: 1.5;
@@ -82,17 +88,24 @@ body {
 }
 
 .wrapper {
-  max-width: 960px;
+  /* box-sizing: border-box; */
+  width: 90vw;
+  max-width: 1170px;
   /* margin-top: 80px; */
-  margin: 50px 40px 100px;
+  /* margin: 50px 40px 100px; */
+  margin: 0 auto;
+  margin-top: 80px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
   /* justify-items: center; */
   color: #444;
 }
 
 .Card {
+  margin: 0 auto;
   width: 300px;
   height: 225px;
   position: relative;
@@ -143,8 +156,69 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
+/********** JS Page ************/
+.course-container{
+  margin: 0 50px;
+}
 
+.js-cover{
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('') no-repeat; */
+  height: 920px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  ), url('./images/Hero-Dark.png');
+  /* background: linear-gradient(to bottom, transparent 0%, black 10%); */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.course-title{
+  text-decoration: none;
+  /* margin: 50px 0; */
+  font-size: 80px;
+  white-space: pre-line;
+}
+
+.course-title-wrapper{
+  margin-top: 100px;
+  display: flex;
+}
+
+.course-header{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.topics{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 50px;
+}
+
+.topics .Card{
+  flex: 0 0 auto;
+  margin-right: 50px;
+  width: 350px;
+  height: 275px;
+  z-index: 1;
+  /* background: blue; */
+}
+
+.lectures .Card{
+  z-index: 1;
+}
+/********** End JS Page ************/
 
