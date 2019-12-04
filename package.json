@@ -1,0 +1,22 @@
+{
+  "name": "js-beans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinnguyen95/JS-Beans.git"
+  },
+  "author": "Colin Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colinnguyen95/JS-Beans/issues"
+  },
+  "homepage": "https://github.com/colinnguyen95/JS-Beans#readme",
+  "dependencies": {
+    "contentful": "^7.10.0"
+  }
+}
