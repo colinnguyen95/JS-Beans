@@ -6,61 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Beans</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="https://kit.fontawesome.com/a1df48f05b.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <section class="hero-wrapper">
         <div class="nav-container">
-            <!-- <i class="fas fa-home"></i> -->
             <img src="./images/JS-Beans-Logo.svg" height="50"/>
             <a class="active" href="#courses">Courses</a>
-            <a href="#downloads">Downloads</a>
             <a href="#contact">Team</a>
-            <a href="#about">Account</a>
+            <a href="#about" id="myBtn">Login</a>
         </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="login_div" class="main-div">
+                    <h3>Hi! Please login</h3>
+                    <form>
+                        <input type="email" placeholder="Email..." id="email_field" />
+                        <input type="password" placeholder="Password..." id="password_field" />
+                        <button onclick="login()">Login to Account</button>
+                    </form>
+                </div>
+                <div id="signup_div" class="main-div">
+                        <h3>Hi! Please Sign Up</h3>
+                        <p>Make sure your password is longer than 6 characters</p>
+                        <form id="signup-form">
+                            <input type="email" placeholder="Email..." id="signup-email" />
+                            <input type="password" placeholder="Password..." id="signup-password" />
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                <div id="user_div" class="loggedin-div">
+                    <h3>Welcome User</h3>
+                    <p id="user_para">Welcome. You're currently logged in.</p>
+                    <button onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+
         <img src="./images/beans.svg" class="beans"/>
         <h1 class="hero-title">JS Beans</h1>
         <p class="hero-header">Dive into the world of web development. Learn how to build websites from scratch using HTML, CSS, JavaScript, and front end libraries such as React.</p>
+        
+        <div class="learn-btn"><a>Start Learning</a></div>
 
+        <!-- This produces the wave animation of the front page -->
         <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none">
             <path fill="#212C4F">
             <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s"
-                values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
-            
+                values="
+                M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
                 M0 86.3149C316 86.315 444 159.155 884 51.1554C1324 -56.8446 1320.29 34.1214 1538 70.4063C1814 116.407 2156 188.408 2560 86.315V232.317L0 232.316V86.3149Z;
-            
                 M0 53.6584C158 11.0001 213 0 363 0C513 0 855.555 115.001 1154 115.001C1440 115.001 1626 -38.0004 2560 53.6585V199.66L0 199.66V53.6584Z;
-            
-                M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;" />
+                M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;"/>
             </path>
         </svg>
             
     </section>
 
     <section class="icons">
-        <div class="icon"><img src="./images/HTML-icon.svg" height="80"/></div>
-        <div class="icon"><img src="./images/css-icon.svg" height="80"/></div>
-        <div class="icon"><a href="./course-pages/javascript/javascript.html"><img src="./images/JS-icon.svg" height="80"/></a></div>
-        <div class="icon"><img src="./images/web-icon.svg" height="80"/></div>
-        <div class="icon"><img src="./images/logo-react.svg" height="80"/></div>  
+        <div class="icon"><img src="./images/HTML-icon.svg" /></div>
+        <div class="icon"><img src="./images/css-icon.svg" /></div>
+        <div class="icon"><a href="./course-pages/javascript/javascript.html"><img src="./images/JS-icon.svg" /></a></div>
+        <div class="icon"><img src="./images/web-icon.svg" /></div>
+        <div class="icon"><img src="./images/logo-react.svg" /></div>  
     </section>
 
     <section class="content">
         <h2 class="courses-title">6 courses, more coming</h2>
-        <div class="wrapper">
-            <!-- <div class="Card a">
-                <img src="./images/html.jpg">
-                <h3>HTML</h3>
-                <p>Your very first step into creating web pages</p>
-            </div> -->
-            <!-- <div class="Card b">CSS</div>
-            <div class="Card c">JavaScript</div>
-            <div class="Card d">Web Design Principles</div>
-            <div class="Card e">Create Your Own Website</div>
-            <div class="Card f">Web Development</div> -->
-        </div>
+        <div class="wrapper"></div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script> -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyC6l-z7BABXlAgr_E1ZBvFo5djm9-imCSo",
+        authDomain: "js-beans.firebaseapp.com",
+        databaseURL: "https://js-beans.firebaseio.com",
+        projectId: "js-beans",
+        storageBucket: "js-beans.appspot.com",
+        messagingSenderId: "360757613630",
+        appId: "1:360757613630:web:e3eca277a4d11b2dc4ad6f",
+        measurementId: "G-CJYMKX86KQ"
+    };
+    // Initialize Firebase
+    const auth = firebase.initializeApp(firebaseConfig);
+    // const db = firebase.analytics();
+
+    //make auth and firestore references
+    const auth1 = firebase.auth();
+    const db = firebase.firestore();
+
+    // //update firestore settings
+    // db.settings({timestampInSnapshots: true});
+    </script>
     <script src="app.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>
