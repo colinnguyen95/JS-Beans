@@ -9,9 +9,11 @@
 </head>
 <body>
     <section class="hero-wrapper">
+        <!-- NAVIGATION BAR -->
         <div class="nav-container">
             <img src="./images/JS-Beans-Logo.svg" height="50"/>
-            <a class="active" href="#courses">Courses</a>
+            <a href="index.html">Home</a>
+            <a class="active scroll" href="#course-content">Courses</a>
             <a href="./team.html">Team</a>
             <a href="#about" id="myBtn">Login</a>
         </div>
@@ -50,7 +52,7 @@
         <h1 class="hero-title">JS Beans</h1>
         <p class="hero-header">Dive into the world of web development. Learn how to build websites from scratch using HTML, CSS, JavaScript, and front end libraries such as React.</p>
         
-        <div class="learn-btn"><a>Start Learning</a></div>
+        <div class="learn-btn"><button><a href="#course-content" class="scroll">Start Learning</a></button></div>
 
         <!-- This produces the wave animation of the front page -->
         <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none">
@@ -77,7 +79,7 @@
 
     <section class="content">
         <h2 class="courses-title">6 courses, more coming</h2>
-        <div class="wrapper"></div>
+        <div id="course-content" class="wrapper"></div>
     </section>
     <!-- <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script> -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -109,6 +111,7 @@
     // //update firestore settings
     // db.settings({timestampInSnapshots: true});
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <script src="auth.js"></script>
 </body>

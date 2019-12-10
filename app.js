@@ -1,3 +1,4 @@
+//**THIS IS THE CONTENTFUL CLIENT SERVICE (FUTURE USE)****/
 // var client = contentful.createClient({
 //     space: 'x4jjujv3ppx5',
 //     accessToken: '_-8gfgQbjRke6f59m_O5m1Jo4BvADnwMRcP3P6_8D-Q'
@@ -5,29 +6,36 @@
 
 // Get the modal
 var modal = document.getElementById("myModal");
-
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
+//JQUERY SMOOTH SCROLL for homepage
+$(document).ready(function() {
+  const scrollLink = $('.scroll');
+
+  scrollLink.click(function(e) {
+    e.preventDefault();
+    $('body, html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000)
+  })
+})
 
 //Fetching the course content from courses.json file
 class Courses {
