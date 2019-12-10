@@ -341,3 +341,85 @@ input, button {
 }
 /********** End JS Page ************/
 
+/********** Team Page ************/
+.team-wrapper{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-wrapper h1{
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem; */
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 50px;
+  margin-bottom: 150px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #202C4E;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: #fff;
+  overflow: hidden;
+}
+
+.team .team_member .team_img img{
+  width: 100%;
+  /* height: 100%; */
+  /* padding: 5px; */
+  /* z-index: -9999; */
+}
+
+.description{
+  margin-bottom: 10px;
+}
+
+.fa-linkedin{
+  color: #0e76a8;
+  font-size: 2.5em;
+}
+
+/********** End JS Page ************/
+
+
