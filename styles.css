@@ -38,9 +38,6 @@ a{
 .hero-wrapper{
   margin: 0;
   text-align: center;
-  /* display: flex;
-  align-items: center;
-  flex-direction: column; */
   height: 920px;
   background: linear-gradient(
     rgba(0, 0, 0, 0.1),
@@ -216,6 +213,11 @@ input, button {
 .icon img{
   margin: 0 50px;
   height: 80px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.icon img:hover{
+  transform: translateY(-3px) scale(1.2,1.2);
 }
 
 .wrapper {
