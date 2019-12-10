@@ -2,10 +2,10 @@
 //     space: 'x4jjujv3ppx5',
 //     accessToken: '_-8gfgQbjRke6f59m_O5m1Jo4BvADnwMRcP3P6_8D-Q'
 // })
-  class Topics {
+class Topics {
     async getTopics(){
       try{
-        let result = await fetch("../../topics-json/javascript.json");
+        let result = await fetch("../../topics-json/html.json");
         let data = await result.json();
         let topics = data.items;
   
@@ -29,7 +29,7 @@
       let result = '';
       topics.forEach(topic => {
         result +=`
-        <a href="../../lectures/javascript/${topic.title.replace(/\s+/g, '-').toLowerCase()}/${topic.title.replace(/\s+/g, '-').toLowerCase()}.html">
+        <a href="../../lectures/${topic.title.replace(/\s+/g, '-').toLowerCase()}/${topic.title.replace(/\s+/g, '-').toLowerCase()}.html">
         <div class="Card">
             <h3>${topic.title}</h3>
             <p>${topic.description}</p>

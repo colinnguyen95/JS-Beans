@@ -2,7 +2,7 @@
   class Lectures {
     async getLectures(){
       try{
-        let result = await fetch("../../lectures.json");
+        let result = await fetch("../../../lectures-json/javascript/intermediate-javascript.json");
         let data = await result.json();
         let lectures = data.items;
   
@@ -19,8 +19,7 @@
     }
   }
   
-  
-  
+
   class UI  {
     //display all lectures
     displayLectures(lectures){
@@ -28,7 +27,7 @@
       let result = '';
       lectures.forEach(lecture => {
         result +=`
-        <a href="../../lecture-topics/${lecture.title.replace(/\s+/g, '-').toLowerCase()}.html">
+        <a href="../../../lecture-topics/${lecture.title.replace(/\s+/g, '-').toLowerCase()}.html">
         <div class="Card">
             <h3>${lecture.title}</h3>
             <p>${lecture.description}</p>

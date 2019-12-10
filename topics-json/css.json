@@ -1,0 +1,44 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "CSS Basics",
+          "description": "First steps",
+          "image": { "fields": { "file": { "url": "https://blog.spoongraphics.co.uk/wp-content/uploads/2017/landscape-illustrations/13.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Intermediate CSS",
+          "description": "Learn how to style web pages",
+          "image": { "fields": { "file": { "url": "https://i.pinimg.com/originals/a9/65/d4/a965d4e2042767e93e9dfd55cfd0c573.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Advance CSS",
+          "description": "Dive into cool animations",
+          "image": { "fields": { "file": { "url": "https://m6y5z8f5.stackpathcdn.com/wp-content/uploads/2018/11/35-scenic-landscape-illustrations-with-vibrant-colors-28.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Practice Project",
+          "description": "Here's where the fun begins",
+          "image": { "fields": { "file": { "url": "https://wallpaperart.net/wp-content/uploads/2019/01/Firewatch-Wallpaper-Dribbble-Eastern-light-by-Dave-Chenell.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "CSS Challenges",
+          "description": "JavaScript will make you powerful",
+          "image": { "fields": { "file": { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwAM7He2DFFFJbPqg9gRX5ZYYIz6pjuxhTpNFsSl_OOeul4f1&s" } } }
+        }
+      }
+    ]
+  }

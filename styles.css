@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
-:root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
-  --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
-}
 * {
   margin: 0;
   padding: 0;
@@ -76,9 +68,6 @@ a{
 }
 
 .hero-header{
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   margin: 0 auto;
   max-width: 600px;
   text-align: center;
@@ -215,19 +204,14 @@ input, button {
 }
 
 .wrapper {
-  /* box-sizing: border-box; */
   width: 90vw;
   max-width: 1170px;
-  /* margin-top: 80px; */
-  /* margin: 50px 40px 100px; */
   margin: 0 auto;
   margin-top: 80px;
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
-  /* justify-items: center; */
   color: #444;
 }
 

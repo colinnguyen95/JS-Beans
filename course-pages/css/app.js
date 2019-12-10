@@ -2,10 +2,10 @@
 //     space: 'x4jjujv3ppx5',
 //     accessToken: '_-8gfgQbjRke6f59m_O5m1Jo4BvADnwMRcP3P6_8D-Q'
 // })
-  class Topics {
+class Topics {
     async getTopics(){
       try{
-        let result = await fetch("../../topics-json/javascript.json");
+        let result = await fetch("../../topics-json/css.json");
         let data = await result.json();
         let topics = data.items;
   
