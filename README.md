@@ -9,6 +9,7 @@ Key Things:
 3. The overall site was built using HTML, CSS, and JavaScript. 
 4. Content is stored in json files (for now) 
 5. Every subject card is not created manually. The program fetces content stored in json files and runs an array method to create each subject card dynamically.
+6. The site is mobile friendly, resize the window and observe how the layout of the cards adapt to various screen sizes. This was done using CSS Grids and media queries.
 
 
 
