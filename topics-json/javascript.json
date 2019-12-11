@@ -39,14 +39,6 @@
           "description": "JavaScript will make you powerful",
           "image": { "fields": { "file": { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwAM7He2DFFFJbPqg9gRX5ZYYIz6pjuxhTpNFsSl_OOeul4f1&s" } } }
         }
-      },
-      {
-        "sys": { "id": "6" },
-        "fields": {
-          "title": "Interview Questions",
-          "description": "Put everything you learned to the test",
-          "image": { "fields": { "file": { "url": "https://i.imgur.com/d0fkqAW.jpg" } } }
-        }
       }
     ]
   }
